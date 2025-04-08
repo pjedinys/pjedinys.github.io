@@ -1,1 +1,95 @@
+body {
+    transition: background-color 0.3s, color 0.3s;
+    background-color: #343a40;
+    color: #fff;
+}
 
+.card {
+    transition: background-color 0.3s, color 0.3s;
+    background-color: #495057;
+    color: #fff;
+}
+
+.card-title,
+.card-text,
+.card-text small {
+    color: #fff;
+}
+
+.light-mode {
+    background-color: #fff;
+    color: #000;
+}
+
+.light-mode .card {
+    background-color: #f8f9fa;
+    color: #000;
+}
+
+.light-mode .card-title,
+.light-mode .card-text,
+.light-mode .card-text small {
+    color: #000;
+}
+
+.navbar-nav {
+    flex-direction: row; /* Display items horizontally */
+    white-space: nowrap; /* Prevent wrapping of navbar items */
+}
+
+.navbar-collapse {
+    justify-content: flex-end; /* Push items to the right */
+}
+
+.nav-item {
+    margin-right: 10px; /* Add spacing between items */
+}
+
+.nav-head {
+    font-weight: bold !important;
+    color: white !important;
+    margin-right: 40px;
+    display: block;
+    padding: var(--bs-nav-link-padding-y) var(--bs-nav-link-padding-x);
+    font-size: var(--bs-nav-link-font-size);
+    font-weight: var(--bs-nav-link-font-weight);
+    color: var(--bs-nav-link-color);
+    text-decoration: none;
+    background: 0 0;
+    border: 0;
+    transition: color .15s ease-in-out,background-color .15s ease-in-out,border-color .15s ease-in-out;
+}
+
+.text-muted,
+label {
+    color: rgba(255, 255, 255, 0.6) !important; /* Light gray for muted text */
+}
+
+h5,
+h6 {
+    color: #fff; /* White for headings */
+}
+
+.light-mode .text-muted,
+.light-mode label {
+    color: rgba(0, 0, 0, 0.6) !important; /* Dark gray for muted text in light mode */
+}
+
+.light-mode h5,
+.light-mode h6 {
+    color: #000; /* Black for headings in light mode */
+}
+
+#applyFilters {
+    background: purple;
+    border: none;
+}
+
+.navbar {
+    background: purple !important;
+    border: none;
+}
+
+.accent {
+    border: solid 2px purple;
+}
