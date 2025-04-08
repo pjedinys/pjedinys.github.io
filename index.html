@@ -7,25 +7,25 @@
     <title>Portfolio</title>
     <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css" rel="stylesheet"
         integrity="sha384-QWTKZyjpPEjISv5WaRU9OFeRpok6YctnYmDr5pNlyT2bRjXh0JMhjY6hW+ALEwIH" crossorigin="anonymous">
-    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css"
-        integrity="sha512-9usAa10IRO0HhonpyAIVpjrylPvoDwiPUiKdWk5t3PyolY1cOd4DSE0Ga+ri4AuTroPR5aQvXU9xC6qOPnzFeg=="
-        crossorigin="anonymous" referrerpolicy="no-referrer" />
     <link rel="stylesheet" href="./public/style.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css" integrity="sha512-9usAa10IRO0HhonpyAIVpjrylPvoDwiPUiKdWk5t3PyolY1cOd4DSE0Ga+ri4AuTroPR5aQvXU9xC6qOPnzFeg==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+    <style>
+        /* Hide thumbnails on small screens */
+        @media (max-width: 768px) {
+            .project-thumbnail {
+                display: none;
+            }
+        }
+    </style>
 </head>
 
 <body class="dark-mode">
-
-    <h1 class="container">*PAGE UNDER CONSTRUCTION*</h1>
-
     <nav class="navbar navbar-expand-lg navbar-dark bg-dark">
         <div class="container">
-
-            <div class="collapse navbar-collapse justify-content-between" id="navbarNav">
-                <ul class="navbar-nav">
-                    <li class="nav-item">
-                        <div class="nav-head">Philip Jediny (Filip Jediný)</div>
-                    </li>
-
+            <a class="navbar-brand" href="#">Philip Jediny (Filip Jediný)</a>
+    
+            <div class="d-flex justify-content-between w-100 align-items-center">  
+                <ul class="navbar-nav"> 
                     <li class="nav-item">
                         <a class="nav-link" href="#">About</a>
                     </li>
@@ -39,75 +39,19 @@
                         <a class="nav-link" href="#">Contact</a>
                     </li>
                 </ul>
-                <ul class="navbar-nav"> <!-- Separate ul for the button -->
-                    <li class="nav-item">
-                        <button id="darkModeToggle" class="btn btn-outline-light">
-                            <i class="fas fa-sun"></i> Light Mode
-                        </button>
-                    </li>
-                </ul>
+                <button id="darkModeToggle" class="btn btn-outline-light">
+                    <i class="fas fa-sun"></i> Light Mode
+                </button>
             </div>
         </div>
     </nav>
-
+    
+        
     <div class="container mt-4">
         <div class="row">
 
-            <div class="col-md-8">
-                <div class="accent card mb-3" data-year="2025" data-month="jun" data-tags="python, c++, emergent systems">
-                    <div class="row g-0">
-                        <div class="col-md-4">
-                            <img src="https://via.placeholder.com/150" class="img-fluid rounded-start"
-                                alt="Project 1 Thumbnail">
-                        </div>
-                        <div class="col-md-8">
-                            <div class="card-body">
-                                <h5 class="card-title">Programmable Cellular Automata</h5>
-                                <p class="card-text">08/04/2025 (ongoing)</p>
-                                <p class="card-text"><small class="text-muted">Tags: Python, C++, Emergent Systems</small></p>
-                            </div>
-                        </div>
-                    </div>
-                </div>
-
-                <div class="accent card mb-3" data-year="2025" data-month="jun" data-tags="python, rust, finance, machine learning">
-                    <div class="row g-0">
-                        <div class="col-md-4">
-                            <img src="https://via.placeholder.com/150" class="img-fluid rounded-start"
-                                alt="Project 2 Thumbnail">
-                        </div>
-                        <div class="col-md-8">
-                            <div class="card-body">
-                                <h5 class="card-title">Evolutionary Algorithm for Self-Supervised Trading</h5>
-                                <p class="card-text">08/04/2025 (ongoing)</p>
-                                <p class="card-text"><small class="text-muted">Tags: Python, Rust, Finance, Machine Learning</small>
-                                </p>
-                            </div>
-                        </div>
-                    </div>
-                </div>
-
-                <div class="accent card mb-3" data-year="2025" data-month="jun" data-tags="python, deep learning, data science, physics">
-                    <div class="row g-0">
-                        <div class="col-md-4">
-                            <img src="https://via.placeholder.com/150" class="img-fluid rounded-start"
-                                alt="Project 3 Thumbnail">
-                        </div>
-                        <div class="col-md-8">
-                            <div class="card-body">
-                                <h5 class="card-title">Superconductor Dataset Analysis using GNN and MLP</h5>
-                                <p class="card-text">08/04/2025 (ongoing)</p>
-                                <p class="card-text"><small class="text-muted">Tags: Python, Deep Learning, Data Science, Physics</small></p>
-                            </div>
-                        </div>
-                    </div>
-                </div>
-
-
-            </div>
-
-            <div class="col-md-4">
-                <div class="accent card">
+            <div class="col-md-4 order-md-first order-sm-first order-first">
+                <div class="card mb-3">
                     <div class="card-body">
                         <h5 class="card-title">Filter Projects</h5>
 
@@ -142,6 +86,67 @@
                     </div>
                 </div>
             </div>
+
+            <div class="col-md-8 order-md-last order-sm-last order-last">
+                <div class="card mb-3" data-year="2025" data-month="jun" data-tags="python, c++, emergent systems">
+                    <div class="row g-0">
+                        <div class="col-md-4 project-thumbnail">
+                            <img src="https://via.placeholder.com/150" class="img-fluid rounded-start"
+                                alt="Project 1 Thumbnail">
+                        </div>
+                        <div class="col-md-8">
+                            <div class="card-body">
+                                <h5 class="card-title">Programmable Cellular Automata</h5>
+                                <p class="card-text">08/04/2025 (ongoing)</p>
+                                <p class="card-text"><small class="text-muted">Tags: Python, C++, Emergent Systems</small></p>
+                                <a href="#" class="btn btn-primary btn-sm">View Details</a>
+                                <a href="#" class="btn btn-secondary btn-sm">Source Code</a>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="card mb-3" data-year="2025" data-month="jun" data-tags="python, rust, finance, machine learning">
+                    <div class="row g-0">
+                        <div class="col-md-4 project-thumbnail">
+                            <img src="https://via.placeholder.com/150" class="img-fluid rounded-start"
+                                alt="Project 2 Thumbnail">
+                        </div>
+                        <div class="col-md-8">
+                            <div class="card-body">
+                                <h5 class="card-title">Evolutionary Algorithm for Self-Supervised Trading</h5>
+                                <p class="card-text">08/04/2025 (ongoing)</p>
+                                <p class="card-text"><small class="text-muted">Tags: Python, Rust, Finance, Machine Learning</small>
+                                </p>
+                                <a href="#" class="btn btn-primary btn-sm">View Details</a>
+                                <a href="#" class="btn btn-secondary btn-sm">Source Code</a>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="card mb-3" data-year="2025" data-month="jun" data-tags="python, deep learning, data science, physics">
+                    <div class="row g-0">
+                        <div class="col-md-4 project-thumbnail">
+                            <img src="https://via.placeholder.com/150" class="img-fluid rounded-start"
+                                alt="Project 3 Thumbnail">
+                        </div>
+                        <div class="col-md-8">
+                            <div class="card-body">
+                                <h5 class="card-title">Superconductor Dataset Analysis using GNN and MLP</h5>
+                                <p class="card-text">08/04/2025 (ongoing)</p>
+                                <p class="card-text"><small class="text-muted">Tags: Python, Deep Learning, Data Science, Physics</small></p>
+                                <a href="#" class="btn btn-primary btn-sm">View Details</a>
+                                <a href="#" class="btn btn-secondary btn-sm">Source Code</a>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+
+            </div>
+
+
 
         </div>
     </div>

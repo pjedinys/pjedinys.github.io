@@ -80,16 +80,8 @@ h6 {
     color: #000; /* Black for headings in light mode */
 }
 
-#applyFilters {
-    background: purple;
-    border: none;
-}
-
-.navbar {
-    background: purple !important;
-    border: none;
-}
-
-.accent {
-    border: solid 2px purple;
+@media (max-width: 768px) {
+    .project-thumbnail {
+        display: none;
+    }
 }
