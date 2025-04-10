@@ -85,3 +85,16 @@ h6 {
         display: none;
     }
 }
+
+.headline {
+    text-align: center;
+    font-style: italic;
+    background: lightgray;
+    color: black;
+    padding: 10px;
+}
+
+.navbar-brand {
+    font-style: italic;
+    font-family: initial;
+}

@@ -22,12 +22,12 @@
 <body class="dark-mode">
     <nav class="navbar navbar-expand-lg navbar-dark bg-dark">
         <div class="container">
-            <a class="navbar-brand" href="#">Philip Jediny (Filip Jediný)</a>
+            <a class="navbar-brand" href="#">Philip Jediny / Filip Jediný</a>
     
             <div class="d-flex justify-content-between w-100 align-items-center">  
                 <ul class="navbar-nav"> 
                     <li class="nav-item">
-                        <a class="nav-link" href="#">About</a>
+                        <a class="nav-link" href="pjedinys.github.io/about">About</a>
                     </li>
                     <li class="nav-item">
                         <a class="nav-link active" aria-current="page" href="#">Projects</a>
@@ -46,6 +46,7 @@
         </div>
     </nav>
     
+    <p class="headline">"Constantly learning, mostly by trial and error. Lots of error."</p>
         
     <div class="container mt-4">
         <div class="row">
@@ -63,18 +64,18 @@
 
                         <select class="form-select mb-3" id="monthFilter" aria-label="Select Month">
                             <option selected value="all">All Months</option>
-                            <option value="jan">January</option>
-                            <option value="feb">February</option>
-                            <option value="mar">March</option>
-                            <option value="apr">April</option>
-                            <option value="may">May</option>
-                            <option value="jun">June</option>
-                            <option value="jul">July</option>
-                            <option value="aug">August</option>
-                            <option value="sep">September</option>
-                            <option value="oct">October</option>
-                            <option value="nov">November</option>
-                            <option value="dec">December</option>
+                            <option value="January">January</option>
+                            <option value="February">February</option>
+                            <option value="March">March</option>
+                            <option value="April">April</option>
+                            <option value="May">May</option>
+                            <option value="June">June</option>
+                            <option value="July">July</option>
+                            <option value="August">August</option>
+                            <option value="September">September</option>
+                            <option value="October">October</option>
+                            <option value="November">November</option>
+                            <option value="December">December</option>
                         </select>
 
                         <h6 class="card-subtitle mb-2 text-muted">By Tags</h6>
@@ -87,73 +88,15 @@
                 </div>
             </div>
 
-            <div class="col-md-8 order-md-last order-sm-last order-last">
-                <div class="card mb-3" data-year="2025" data-month="jun" data-tags="python, c++, emergent systems">
-                    <div class="row g-0">
-                        <div class="col-md-4 project-thumbnail">
-                            <img src="https://via.placeholder.com/150" class="img-fluid rounded-start"
-                                alt="Project 1 Thumbnail">
-                        </div>
-                        <div class="col-md-8">
-                            <div class="card-body">
-                                <h5 class="card-title">Programmable Cellular Automata</h5>
-                                <p class="card-text">08/04/2025 (ongoing)</p>
-                                <p class="card-text"><small class="text-muted">Tags: Python, C++, Emergent Systems</small></p>
-                                <a href="#" class="btn btn-primary btn-sm">View Details</a>
-                                <a href="#" class="btn btn-secondary btn-sm">Source Code</a>
-                            </div>
-                        </div>
-                    </div>
-                </div>
-
-                <div class="card mb-3" data-year="2025" data-month="jun" data-tags="python, rust, finance, machine learning">
-                    <div class="row g-0">
-                        <div class="col-md-4 project-thumbnail">
-                            <img src="https://via.placeholder.com/150" class="img-fluid rounded-start"
-                                alt="Project 2 Thumbnail">
-                        </div>
-                        <div class="col-md-8">
-                            <div class="card-body">
-                                <h5 class="card-title">Evolutionary Algorithm for Self-Supervised Trading</h5>
-                                <p class="card-text">08/04/2025 (ongoing)</p>
-                                <p class="card-text"><small class="text-muted">Tags: Python, Rust, Finance, Machine Learning</small>
-                                </p>
-                                <a href="#" class="btn btn-primary btn-sm">View Details</a>
-                                <a href="#" class="btn btn-secondary btn-sm">Source Code</a>
-                            </div>
-                        </div>
-                    </div>
-                </div>
-
-                <div class="card mb-3" data-year="2025" data-month="jun" data-tags="python, deep learning, data science, physics">
-                    <div class="row g-0">
-                        <div class="col-md-4 project-thumbnail">
-                            <img src="https://via.placeholder.com/150" class="img-fluid rounded-start"
-                                alt="Project 3 Thumbnail">
-                        </div>
-                        <div class="col-md-8">
-                            <div class="card-body">
-                                <h5 class="card-title">Superconductor Dataset Analysis using GNN and MLP</h5>
-                                <p class="card-text">08/04/2025 (ongoing)</p>
-                                <p class="card-text"><small class="text-muted">Tags: Python, Deep Learning, Data Science, Physics</small></p>
-                                <a href="#" class="btn btn-primary btn-sm">View Details</a>
-                                <a href="#" class="btn btn-secondary btn-sm">Source Code</a>
-                            </div>
-                        </div>
-                    </div>
-                </div>
-
-
+            <div id="projects" class="col-md-8 order-md-last order-sm-last order-last">
             </div>
-
-
-
         </div>
     </div>
     <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js"
         integrity="sha384-YvpcrYf0tY3lHB60NNkmXc5s9fDVZLESaAA55NDzOxhy9GkcIdslK1eN7N6jIeHz"
         crossorigin="anonymous"></script>
     <script defer src="./scripts/main.js"></script>
+    <script defer src="./scripts/generate-projects.js"></script>
 </body>
 
 </html>
