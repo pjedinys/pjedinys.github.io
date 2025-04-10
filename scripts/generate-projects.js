@@ -32,17 +32,17 @@ projects.forEach((project) => {
        <div class="project card mb-3" data-year="${project["data-year"]}" data-month="${project["data-month"]}" 
        data-tags="${project["data-tags"]}">
                     <div class="row g-0">
-                        <div class="col-md-4 project-thumbnail">
-                            <img src="${project["thumbnail-src"]}" class="img-fluid rounded-start">
-                        </div>
                         <div class="col-md-8">
                             <div class="card-body">
                                 <h5 class="card-title">${project["title"]}</h5>
                                 <p class="card-text">${project["data-month"]} ${project["data-year"]}</p>
                                 <p class="card-text"><small class="text-muted">Tags: ${project["data-tags"]}</small></p>
-                                <a href="pjedinys.github.io/projects/${project["title"]}" class="btn btn-primary btn-sm">View Details</a>
+                                <a href="projects/${project["title"]}/index.html" class="btn btn-primary btn-sm">View Details</a>
                                 <a href="https://github.com/pjedinys/${project["title"]}" class="btn btn-secondary btn-sm">Source Code</a>
                             </div>
+                        </div>
+                        <div class="col-md-4 project-thumbnail">
+                            <img src="${project["thumbnail-src"]}" class="img-fluid rounded-start">
                         </div>
                     </div>
                 </div> 

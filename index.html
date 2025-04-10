@@ -20,6 +20,7 @@
 </head>
 
 <body class="dark-mode">
+    <canvas id="backgroundCanvas"></canvas>
     <nav class="navbar navbar-expand-lg navbar-dark bg-dark">
         <div class="container">
             <a class="navbar-brand" href="#">Philip Jediny / Filip Jediný</a>
@@ -27,7 +28,7 @@
             <div class="d-flex justify-content-between w-100 align-items-center">  
                 <ul class="navbar-nav"> 
                     <li class="nav-item">
-                        <a class="nav-link" href="pjedinys.github.io/about">About</a>
+                        <a class="nav-link" href="about/index.html">About</a>
                     </li>
                     <li class="nav-item">
                         <a class="nav-link active" aria-current="page" href="#">Projects</a>
@@ -39,14 +40,19 @@
                         <a class="nav-link" href="#">Contact</a>
                     </li>
                 </ul>
-                <button id="darkModeToggle" class="btn btn-outline-light">
-                    <i class="fas fa-sun"></i> Light Mode
-                </button>
+                <div class="d-flex align-items-center">
+                    <button id="elementsToggle" class="btn btn-outline-light">
+                        <i class="fas fa-magnifying-glass"></i> Toggle Elements
+                    </button>
+                    <button id="darkModeToggle" class="btn btn-outline-light">
+                        <i class="fas fa-sun"></i> Light Mode
+                    </button>
+                </div>
             </div>
         </div>
     </nav>
     
-    <p class="headline">"Constantly learning, mostly by trial and error. Lots of error."</p>
+    <p class="headline">"Constantly improving, mostly by trial and error. Lots of error."</p>
         
     <div class="container mt-4">
         <div class="row">
@@ -97,6 +103,7 @@
         crossorigin="anonymous"></script>
     <script defer src="./scripts/main.js"></script>
     <script defer src="./scripts/generate-projects.js"></script>
+    <script defer src="./scripts/huge-balls.js"></script>
 </body>
 
 </html>

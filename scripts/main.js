@@ -1,8 +1,20 @@
 console.log("main.js loaded successfully")
 
 const applyFiltersButton = document.getElementById('applyFilters');
+const elementsToggle = document.getElementById('elementsToggle');
 const darkModeToggle = document.getElementById('darkModeToggle');
 const body = document.body;
+
+elementsToggle.addEventListener('click', function () {
+    cards = document.querySelectorAll(".card");
+    cards.forEach(element => {
+        if (element && element.classList.contains('hidden') == false) {  // Check if element exists before attempting to modify it
+            element.classList.add('hidden');
+        } else if (element) {
+            element.classList.remove('hidden')
+        }
+    });
+});
         
 // Dark-mode toggle
 darkModeToggle.addEventListener('click', () => {
@@ -66,3 +78,4 @@ document.getElementById('tagFilterInput').addEventListener('keypress', function 
         document.getElementById('applyFilters').click(); // Trigger the button click
      }
 });
+
